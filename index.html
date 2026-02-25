@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>MEN'S HAIR SENSE GEO / AI対策 チェックリスト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      padding: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+      background: #f7f7f7;
+    }
+    h1, h2, h3 {
+      margin-top: 1.4em;
+    }
+    h1 {
+      font-size: 1.6rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 4px;
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 1.2em;
+    }
+    .section {
+      background: #fff;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 6px 0;
+    }
+    label {
+      cursor: pointer;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 4px;
+      margin-left: 28px;
+    }
+    .small {
+      font-size: 0.85rem;
+      color: #777;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: #eee;
+      margin-left: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>MEN'S HAIR SENSE GEO / AI対策 チェックリスト</h1>
+<p class="small">
+  ※各項目をオーナーさんと一緒に確認しながら、完了したものにチェックを入れてください。<br>
+  「GEO対策 = 地図・エリア検索（Googleマップ / AI検索）で正しく・有利に出るための整え作業」です。
+</p>
+
+<div class="section">
+  <h2>① NAP・公式サイトURLの統一</h2>
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox">
+        住所・電話番号・営業時間（NAP）が、サイト内の各ページで同じ表記になっている
+      </label>
+      <div class="note">例：〒150-0042 東京都渋谷区神南1丁目22-8 渋谷東日本ビル6F / 平日11:00-20:00 / 土日祝10:00-19:00 など。</div>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        Googleマップ（Googleビジネスプロフィール）の「ウェブサイト」のURLが
+        <strong>https://mens-sense-shibuya.com/</strong> に統一されている
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        HotPepper・楽天ビューティーなど各ポータルの「公式サイト」リンクも、
+        <strong>https://mens-sense-shibuya.com/</strong> 系のURLになっている
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        Instagramプロフィールのリンク先も、現在の公式サイトドメインになっている
+      </label>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>② 店舗ごとのページと情報整理</h2>
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox">
+        MEN'S HAIR SENSE 渋谷神南（ヘア）専用の店舗ページがある
+      </label>
+      <div class="note">例：/salon/jinnan/ のように、1店舗1URLで完結するページ。</div>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        韓国メンズヘア SENSE BLUE 渋谷 宇田川交番前 の専用ページがある
+      </label>
+      <div class="note">例：/salon/blue-udagawa/ など。</div>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        MEN'S HAIR SENSE 渋谷神南（眉毛）専用ページがある
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        各店舗ページの「ページ冒頭」に、店名・住所・営業時間・電話番号がまとまって表示されている
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        各店舗ページに「アクセス（駅からの行き方）」がテキストで分かりやすく書いてある
+      </label>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>③ 構造化データ（schema.org）の実装</h2>
+  <h3>トップページ</h3>
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox">
+        トップページに <code>Organization</code> と <code>WebSite</code> の JSON-LD を設置した
+      </label>
+      <div class="note">このチェックリストの上の「1-1 トップページ用 JSON-LD」をベースに実装。</div>
+    </li>
+  </ul>
+
+  <h3>店舗ページ</h3>
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox">
+        渋谷神南（ヘア）の店舗ページに <code>HairSalon</code> の JSON-LD を設置した
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        宇田川交番前（SENSE BLUE）の店舗ページに <code>HairSalon</code> の JSON-LD を設置した
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        渋谷神南（眉毛）の店舗ページに <code>HealthAndBeautyBusiness</code>（または <code>BeautySalon</code>）の JSON-LD を設置した
+      </label>
+    </li>
+  </ul>
+
+  <h3>FAQ・サービス</h3>
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox">
+        「初めての方へ Q&A」ページを作り、<code>FAQPage</code> の構造化データを付けた
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        代表的なメニュー（ニュアンスパーマ / ツイストスパイラル / ダウンパーマ 等）ごとに説明ページを作り、
+        <code>Service</code> として構造化した
+      </label>
+      <div class="note">「どんな人向け・所要時間・料金・注意点」が分かるとAIの回答素材としてとても強い。</div>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>④ コンテンツ整備（AIが答えを作りやすくする）</h2>
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox">
+        スタイル図鑑ページが「準備中」のままではなく、公開するか、非公開にするかどちらかに整理した
+      </label>
+      <div class="note">「トップに戻る」リンクが旧ドメインに飛ばないことも確認。</div>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        「渋谷 × メンズ × 悩み」に対応した記事をいくつか用意した
+      </label>
+      <div class="note">例：「渋谷で初めてメンズ美容室に行く人が失敗しないコツ」「社会人1年目・就活生向けの髪型選び」など。</div>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        メニュー一覧だけでなく、「どんな人におすすめか」が分かるメニュー詳細ブロックを作った
+      </label>
+      <div class="note">髪質・職業・校則・年代などの目安を書いておく。</div>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        代表的なスタイルの写真に「施術内容・年代・髪質など」を alt テキストとして設定した
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        人気記事・重要ページの誤字・変換ミスを一度まとめて修正した
+      </label>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>⑤ 実績・レビュー・信頼の見せ方</h2>
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox">
+        トップページ上部に「HOT PEPPER Beauty AWARD受賞」「メンズ施術20万人」などの実績を分かりやすく表示した
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        サロン紹介ページに「受賞歴・メディア掲載・ランキング」などの情報をまとめた
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        自社サイト側にも「お客様の声・レビュー」を一部掲載した（必要に応じて <code>Review</code> / <code>AggregateRating</code> を構造化）
+      </label>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>⑥ 最終確認</h2>
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox">
+        検索：<strong>「メンズヘア センス 渋谷」</strong> で検索し、公式サイト・Googleマップ・各ポータルの情報が矛盾していない
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox">
+        検索：<strong>「渋谷 メンズ パーマ」「渋谷 メンズ 眉毛」</strong> などで、自店の情報がきちんと表示されているか確認した
+      </label>
+    </li>
+  </ul>
+</div>
+
+<p class="small">
+  作成者メモ：このチェックリストは「MEN'S HAIR SENSE 渋谷」のGEO / AI対策ヒアリング用に作成。<br>
+  他サロンに転用する場合は、店名・住所・URLを適宜書き換えてください。
+</p>
+
+</body>
+</html>
